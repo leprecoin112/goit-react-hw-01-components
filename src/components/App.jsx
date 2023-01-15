@@ -9,9 +9,10 @@ export function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout />}>
+        <Route path="/goit-react-hw-01-components" element={<Layout />}>
+          <Route index element={<></>} />
           <Route
-            index
+            path="/goit-react-hw-01-components/profile"
             element={
               <Profile
                 username={user.username}
@@ -22,9 +23,18 @@ export function App() {
               />
             }
           />
-          <Route path="statistics" element={<Statistics data={data} />} />
-          <Route path="friends" element={<Statistics data={data} />} />
-          <Route path="transactions" element={<Statistics data={data} />} />
+          <Route
+            path="/goit-react-hw-01-components/statistics"
+            element={<Statistics data={data} />}
+          />
+          <Route
+            path="/goit-react-hw-01-components/friends"
+            element={<Statistics data={data} />}
+          />
+          <Route
+            path="/goit-react-hw-01-components/transactions"
+            element={<Statistics data={data} />}
+          />
           <Route path="*" element={<Layout />} />
         </Route>
       </Routes>

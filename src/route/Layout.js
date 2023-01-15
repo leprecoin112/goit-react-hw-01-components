@@ -6,16 +6,18 @@ const Layout = () => {
       <nav>
         <ul>
           <li>
-            <Link to="/">Profile</Link>
+            <Link to="/goit-react-hw-01-components/profile">Profile</Link>
           </li>
           <li>
-            <Link to="/statistics">Statistics</Link>
+            <Link to="/goit-react-hw-01-components/statistics">Statistics</Link>
           </li>
           <li>
-            <Link to="/friends">Friends</Link>
+            <Link to="/goit-react-hw-01-components/friends">Friends</Link>
           </li>
           <li>
-            <Link to="/transactions">Transactions</Link>
+            <Link to="/goit-react-hw-01-components/transactions">
+              Transactions
+            </Link>
           </li>
         </ul>
       </nav>
