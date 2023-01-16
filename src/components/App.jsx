@@ -1,10 +1,14 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import user from '../data/user.json';
-import data from '../data/data.json';
+import user from 'data/user.json';
+import data from 'data/data.json';
+import friends from 'data/friends.json';
+
 import Profile from './Profile/Profile';
 import Statistics from './Statistics/Statistics';
 import Layout from '../route/Layout';
+import FriendList from './FriendList/FriendList';
+
 export function App() {
   return (
     <BrowserRouter>
@@ -29,7 +33,7 @@ export function App() {
           />
           <Route
             path="/goit-react-hw-01-components/friends"
-            element={<Statistics data={data} />}
+            element={<FriendList friends={friends} />}
           />
           <Route
             path="/goit-react-hw-01-components/transactions"
