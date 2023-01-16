@@ -25,7 +25,7 @@ export function App() {
           />
           <Route
             path="/goit-react-hw-01-components/statistics"
-            element={<Statistics data={data} />}
+            element={<Statistics data={data} title={'Upload stats'} />}
           />
           <Route
             path="/goit-react-hw-01-components/friends"
