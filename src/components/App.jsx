@@ -3,11 +3,13 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import user from 'data/user.json';
 import data from 'data/data.json';
 import friends from 'data/friends.json';
+import transactions from 'data/transactions.json';
 
 import Profile from './Profile/Profile';
 import Statistics from './Statistics/Statistics';
 import Layout from '../route/Layout';
 import FriendList from './FriendList/FriendList';
+import TransactionHistory from './TransactionHistory/TransactionHistory';
 
 export function App() {
   return (
@@ -37,7 +39,7 @@ export function App() {
           />
           <Route
             path="/goit-react-hw-01-components/transactions"
-            element={<Statistics data={data} />}
+            element={<TransactionHistory transactions={transactions} />}
           />
           <Route path="*" element={<Layout />} />
         </Route>
